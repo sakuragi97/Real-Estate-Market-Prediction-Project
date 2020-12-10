@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from server import Util
+import Util
 
 app = Flask(__name__)
 
@@ -23,6 +23,7 @@ def predictPrice():
     response = jsonify({
         'estimated_price' : Util.getEstimatedPrice(location, sqmeter, bath, bhk)
     })
+    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 
