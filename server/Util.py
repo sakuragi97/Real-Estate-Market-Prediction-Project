@@ -37,7 +37,10 @@ def getEstimatedPrice(location, sqmeter, bath, bhk):
     x[2] = bath
     if loc_index >= 0:
         x[loc_index] = 1
-    return round(__model.predict([x])[0], 2)
+    predictResult = round(__model.predict([x])[0], 2)
+    if predictResult < 0:
+        return "No such data is given"
+    return predictResult
 
 
 if __name__ == '__main__':
