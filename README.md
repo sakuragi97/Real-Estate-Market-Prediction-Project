@@ -1,8 +1,6 @@
 # Real-Estate-Market-Prediction-Project
 End-to-End Real Estate Market Price Prediction Project - Machine Learning Project
 
-##### App link on AWS : [Real Estate Market Price Prediction Project](http://ec2-15-237-137-129.eu-west-3.compute.amazonaws.com/)
-
 ## Description:
 #### Developing a Machine Learning App about Real Estate Price Prediction for a region in Asia with deployment on AWS EC2.
 * Cleaning data with Python extracted from Kaggle Dataset about "Banglore Home Prices" containing nearly 13.3k records by handling missing values and normalize property size.
